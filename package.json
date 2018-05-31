@@ -1,0 +1,38 @@
+{
+  "name": "roaring-aws",
+  "version": "0.1.5",
+  "description": "roaring, precompiled for AWS lambda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "lib/**/*.js",
+    "lib/**/*.node",
+    "README.md",
+    "LICENSE",
+    "index.js",
+    "index.d.ts",
+    "RoaringBitmap32.js",
+    "RoaringBitmap32.d.ts",
+    "RoaringBitmap32Iterator.js",
+    "RoaringBitmap32Iterator.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SalvatorePreviti/roaring-node-aws.git"
+  },
+  "keywords": [
+    "roaring",
+    "aws"
+  ],
+  "author": "Salvatore Previti",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/SalvatorePreviti/roaring-node-aws/issues"
+  },
+  "homepage": "https://github.com/SalvatorePreviti/roaring-node-aws#readme",
+  "dependencies": {
+    "roaring": "0.1.5"
+  }
+}
