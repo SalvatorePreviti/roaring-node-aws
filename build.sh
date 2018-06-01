@@ -3,7 +3,7 @@ rm -fr lib/roaring-aws
 
 mkdir -p docker-build
 
-docker run -v $PWD/docker-build:/var/task iopipe/awslambda-npm-install roaring@0.1.8
+docker run -v $PWD/docker-build:/var/task iopipe/awslambda-npm-install roaring@0.2.0 --build-from-source
 
 mkdir -p lib/roaring-aws
 
