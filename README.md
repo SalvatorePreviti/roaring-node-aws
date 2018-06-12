@@ -22,9 +22,9 @@ serverless deploy
 
 ## how it works
 
-This library wraps [roaring][https://github.com/SalvatorePreviti/roaring-node] NPM package.
+This library wraps [roaring](https://github.com/SalvatorePreviti/roaring-node) NPM package.
 It includes also a precompiled .node binary that is used when running inside AWS.
-The normal [roaring][https://github.com/SalvatorePreviti/roaring-node] package is used instead when running outside of AWS (local environment, continuous integration, ...)
+The normal [roaring](https://github.com/SalvatorePreviti/roaring-node) package is used instead when running outside of AWS (local environment, continuous integration, ...)
 
 ## references
 
