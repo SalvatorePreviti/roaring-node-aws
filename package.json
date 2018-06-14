@@ -1,6 +1,6 @@
 {
   "name": "roaring-aws",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "roaring, precompiled for AWS lambda",
   "main": "index.js",
   "types": "index.d.ts",
