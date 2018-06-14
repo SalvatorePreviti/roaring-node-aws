@@ -1,2 +1,2 @@
-const isLambda = require('./lib/is-lambda')
-module.exports = require(isLambda ? './lib/roaring-aws/RoaringBitmap32' : 'roaring/RoaringBitmap32')
+const isAWS = require('./lib/is-aws')
+module.exports = require(isAWS ? './lib/roaring-aws/RoaringBitmap32' : 'roaring/RoaringBitmap32')
