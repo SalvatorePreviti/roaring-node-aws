@@ -1,6 +1,6 @@
 # submodules
 
-docker-build
+docker-build/node_modules
 lib/roaring-aws
 
 # build output
