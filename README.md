@@ -1,6 +1,7 @@
 # roaring
 
-Port of Roaring Bitmaps for NodeJS as a native addon, with precompiled support for Lambda AWS node v8.10.0.
+Port of [Roaring Bitmaps](http://roaringbitmap.org) for NodeJS as a native addon, with precompiled support for Lambda AWS node v8.10.0.
+It is interoperable with other implementations via the [Roaring format](https://github.com/RoaringBitmap/RoaringFormatSpec/).
 
 Roaring bitmaps are compressed bitmaps. They can be hundreds of times faster.
 
@@ -9,6 +10,21 @@ Roaring bitmaps are compressed bitmaps. They can be hundreds of times faster.
 ```sh
 npm install --save roaring-aws
 ```
+
+## serverless
+
+This library is [Serverless](https://serverless.com/framework/docs/providers/aws/guide/deploying/) ready.
+
+```sh
+npm install --save roaring-aws
+serverless deploy
+```
+
+## how it works
+
+This library wraps [roaring](https://github.com/SalvatorePreviti/roaring-node) NPM package.
+It includes also a precompiled .node binary that is used when running inside AWS.
+The normal [roaring](https://github.com/SalvatorePreviti/roaring-node) package is used instead when running outside of AWS (local environment, continuous integration, ...)
 
 ## references
 
