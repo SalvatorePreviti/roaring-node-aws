@@ -39,6 +39,7 @@
     "roaring": "0.2.5"
   },
   "devDependencies": {
+    "@types/node": "^10.3.3",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-node": "^6.0.1",
