@@ -24,7 +24,12 @@ serverless deploy
 
 This library wraps [roaring](https://github.com/SalvatorePreviti/roaring-node) NPM package.
 It includes also a precompiled .node binary that is used when running inside AWS.
+
 The normal [roaring](https://github.com/SalvatorePreviti/roaring-node) package is used instead when running outside of AWS (local environment, continuous integration, ...)
+
+AWS detection works by checking the presence of a non empty environment variable "AWS_EXECUTION_ENV".
+It is set by default when running in AWS Lambdas.
+See https://docs.aws.amazon.com/lambda/latest/dg/current-supported-versions.html
 
 ## references
 
