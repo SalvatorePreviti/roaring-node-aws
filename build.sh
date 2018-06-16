@@ -21,4 +21,6 @@ mkdir -p lib/roaring-aws/build/Release
 
 cp $PWD/docker-build/node_modules/roaring/build/Release/*.node $PWD/lib/roaring-aws/build/Release
 
-echo '\n* OK - all files copied.\n'
+echo ''
+echo '* OK - all files copied.'
+echo ''

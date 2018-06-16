@@ -1,6 +1,6 @@
 {
   "name": "roaring-aws",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "roaring, precompiled for AWS lambda",
   "main": "index.js",
   "types": "index.d.ts",
@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/SalvatorePreviti/roaring-node-aws#readme",
   "dependencies": {
-    "roaring": "0.2.5"
+    "roaring": "0.2.6"
   },
   "devDependencies": {
     "@types/node": "^10.3.3",

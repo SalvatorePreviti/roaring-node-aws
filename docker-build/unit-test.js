@@ -20,7 +20,9 @@ const tests = ['./test/roaring.test', './test/RoaringBitmap32.test', './test/Roa
 
 function runTests() {
   delete require.cache[require.resolve('roaring')]
-  delete require.cache[require.resolve('roaring/lib/cpuinfo')]
+  delete require.cache[require.resolve('roaring/lib/getRoaring')]
+  delete require.cache[require.resolve('roaring/lib/instructionSet')]
+  delete require.cache[require.resolve('roaring/lib/moduleExists')]
   delete require.cache[require.resolve('roaring/RoaringBitmap32')]
   delete require.cache[require.resolve('roaring/RoaringBitmap32Iterator')]
   for (const test of tests) {
@@ -29,7 +31,7 @@ function runTests() {
   }
 }
 
-const cpuinfo = require('roaring/lib/cpuinfo')
+const instructionSet = require('roaring/lib/instructionSet')
 
 console.log('* PLAIN\n')
 process.env.ROARING_DISABLE_SSE42 = 'true'
@@ -38,7 +40,7 @@ process.env.ROARING_TEST_EXPECTED_CPU = 'PLAIN'
 runTests()
 
 console.log()
-if (cpuinfo.AVX2) {
+if (instructionSet === 'AVX2') {
   console.log('* AVX2\n')
   process.env.ROARING_DISABLE_SSE42 = 'false'
   process.env.ROARING_DISABLE_AVX2 = 'false'
@@ -49,7 +51,7 @@ if (cpuinfo.AVX2) {
 }
 
 console.log()
-if (cpuinfo.SSE42) {
+if (instructionSet === 'AVX2' || instructionSet === 'SSE42') {
   console.log('* SSE4\n')
   process.env.ROARING_DISABLE_SSE42 = 'false'
   process.env.ROARING_DISABLE_AVX2 = 'true'
