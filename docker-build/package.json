@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/SalvatorePreviti/roaring-node-aws#readme",
   "dependencies": {
-    "roaring": "^0.2.6",
+    "roaring": "^0.2.7",
     "chai": "^4.1.2"
   }
 }

@@ -30,14 +30,7 @@ describe('RoaringBitmap32Iterator', () => {
       expect(iter instanceof RoaringBitmap32Iterator).to.equal(true)
     })
 
-    it('can be called as a normal function', () => {
-      const iter = RoaringBitmap32Iterator()
-      expect(iter instanceof RoaringBitmap32Iterator).to.equal(true)
-    })
-
     it('throws an exception if called with a non RoaringBitmap32', () => {
-      expect(() => new RoaringBitmap32Iterator(null)).to.throw()
-      expect(() => new RoaringBitmap32Iterator(undefined)).to.throw()
       expect(() => new RoaringBitmap32Iterator(123)).to.throw()
       expect(() => new RoaringBitmap32Iterator([123])).to.throw()
     })
