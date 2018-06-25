@@ -33,7 +33,7 @@ See https://docs.aws.amazon.com/lambda/latest/dg/current-supported-versions.html
 
 ## references
 
-This package - <https://www.npmjs.com/package/roaring-node-aws>
+This package - <https://www.npmjs.com/package/roaring-aws>
 
 Source code and build tools for this package - <https://github.com/SalvatorePreviti/roaring-node-aws>
 
@@ -49,4 +49,7 @@ Portable Roaring bitmaps in C - <https://github.com/RoaringBitmap/CRoaring>
 
 # API
 
-See <https://github.com/SalvatorePreviti/roaring-node>
+- Use require('roaring-aws') instead of require('roaring') in your code.
+- Use require('roaring-aws/RoaringBitmap32') instead of require('roaring/RoaringBitmap32') in your code.
+
+For the API see <https://github.com/SalvatorePreviti/roaring-node/blob/master/documentation/api/index.d.md> and <https://github.com/SalvatorePreviti/roaring-node>
