@@ -1,6 +1,6 @@
 # roaring
 
-Port of [Roaring Bitmaps](http://roaringbitmap.org) for NodeJS as a native addon, with precompiled support for Lambda AWS node v8.10.0.
+Official port of [Roaring Bitmaps](http://roaringbitmap.org) for NodeJS as a native addon, with precompiled support for Lambda AWS node v8.10.0.
 It is interoperable with other implementations via the [Roaring format](https://github.com/RoaringBitmap/RoaringFormatSpec/).
 
 Roaring bitmaps are compressed bitmaps. They can be hundreds of times faster.
