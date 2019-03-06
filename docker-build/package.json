@@ -1,7 +1,7 @@
 {
   "name": "roaring-aws-build",
   "private": true,
-  "version": "0.0.1",
+  "version": "1.0.3",
   "description": "roaring-aws-build",
   "main": "index.js",
   "types": "index.d.ts",
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/SalvatorePreviti/roaring-node-aws#readme",
   "dependencies": {
-    "roaring": "^1.0.3",
+    "roaring": "^1.0.4",
     "chai": "^4.2.0"
   }
 }

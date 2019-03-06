@@ -1,6 +1,6 @@
 {
   "name": "roaring-aws",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "roaring, precompiled for AWS lambda",
   "main": "index.js",
   "types": "index.d.ts",
@@ -36,15 +36,15 @@
   },
   "homepage": "https://github.com/SalvatorePreviti/roaring-node-aws#readme",
   "dependencies": {
-    "roaring": "1.0.3"
+    "roaring": "^1.0.4"
   },
   "devDependencies": {
-    "@types/node": "^10.12.3",
-    "eslint": "^5.7.0",
-    "eslint-config-prettier": "^3.1.0",
-    "eslint-config-quick": "^0.1.15",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^8.0.0",
-    "prettier": "^1.14.3"
+    "@types/node": "^11.10.4",
+    "eslint": "^5.15.1",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-quick": "^0.1.23",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "prettier": "^1.16.4"
   }
 }
