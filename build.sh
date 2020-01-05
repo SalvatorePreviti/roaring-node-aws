@@ -22,6 +22,8 @@ mkdir -p lib/roaring-aws/build/Release
 
 cp $PWD/docker-build/node_modules/roaring/build/Release/*.node $PWD/lib/roaring-aws/build/Release
 
+node $PWD/docker-build/clean-package-json.js
+
 echo ''
 echo '* OK - all files copied.'
 echo ''

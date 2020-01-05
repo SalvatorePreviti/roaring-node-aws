@@ -1,6 +1,6 @@
 {
   "name": "roaring-aws",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "private": false,
   "description": "roaring, precompiled for AWS lambda",
   "keywords": [
@@ -24,7 +24,9 @@
   "types": "index.d.ts",
   "typings": "index.d.ts",
   "files": [
+    "lib/roaring-aws/**/*.*",
     "lib/**/*.js",
+    "lib/**/*.json",
     "lib/**/*.node",
     "README.md",
     "LICENSE",
