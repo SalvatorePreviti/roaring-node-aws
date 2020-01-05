@@ -1,14 +1,28 @@
 {
   "name": "roaring-aws",
-  "version": "1.0.3",
+  "version": "1.0.4",
+  "private": false,
   "description": "roaring, precompiled for AWS lambda",
+  "keywords": [
+    "roaring",
+    "aws"
+  ],
+  "license": "Apache-2.0",
+  "author": "Salvatore Previti",
+  "homepage": "https://github.com/SalvatorePreviti/roaring-node-aws#readme",
+  "bugs": {
+    "url": "https://github.com/SalvatorePreviti/roaring-node-aws/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SalvatorePreviti/roaring-node-aws.git"
+  },
+  "engines": {
+    "node": ">=10.15.0"
+  },
   "main": "index.js",
   "types": "index.d.ts",
   "typings": "index.d.ts",
-  "scripts": {
-    "build": "./build.sh",
-    "rebuild": "./rebuild.sh"
-  },
   "files": [
     "lib/**/*.js",
     "lib/**/*.node",
@@ -21,30 +35,40 @@
     "RoaringBitmap32Iterator.js",
     "RoaringBitmap32Iterator.d.ts"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SalvatorePreviti/roaring-node-aws.git"
+  "scripts": {
+    "build": "./build.sh",
+    "rebuild": "./rebuild.sh",
+    "acuris-eslint": "npx acuris-eslint"
   },
-  "keywords": [
-    "roaring",
-    "aws"
-  ],
-  "author": "Salvatore Previti",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/SalvatorePreviti/roaring-node-aws/issues"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
-  "homepage": "https://github.com/SalvatorePreviti/roaring-node-aws#readme",
+  "lint-staged": {
+    "*.{js,jsx,json,ts,tsx}": [
+      "acuris-eslint --lint-staged --fix --max-warnings=0",
+      "git add"
+    ]
+  },
   "dependencies": {
-    "roaring": "^1.0.4"
+    "roaring": "^1.0.6"
   },
   "devDependencies": {
-    "@types/node": "^11.10.4",
-    "eslint": "^5.15.1",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-config-quick": "^0.1.23",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-node": "^8.0.1",
-    "prettier": "^1.16.4"
+    "@acuris/eslint-config": "^0.0.51",
+    "@types/node": "^13.1.4",
+    "@typescript-eslint/eslint-plugin": "^2.14.0",
+    "@typescript-eslint/parser": "^2.14.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-json": "^2.0.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-scope": "^5.0.0",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.4"
   }
 }

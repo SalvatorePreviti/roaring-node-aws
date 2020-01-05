@@ -1,19 +1,19 @@
 {
-  "extends": ["eslint-config-quick"],
+  "extends": ["@acuris"],
   "plugins": ["node"],
-  "parserOptions": {
-    "ecmaVersion": 8,
-    "ecmaFeatures": {
-      "globalReturn": false,
-      "generators": true,
-      "objectLiteralDuplicateProperties": false
-    },
-    "sourceType": "module"
-  },
   "rules": {
-    "node/no-missing-require": "off",
-    "node/no-unpublished-require": 0
+    "node/no-missing-require": 0,
+    "node/no-unpublished-require": 0,
+    "global-require": 0
   },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "@typescript-eslint/no-throw-literal": 0
+      }
+    }
+  ],
   "env": {
     "mocha": true,
     "es6": true,

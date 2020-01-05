@@ -1,30 +1,30 @@
 {
   "name": "roaring-aws-build",
+  "version": "1.0.4",
   "private": true,
-  "version": "1.0.3",
   "description": "roaring-aws-build",
+  "keywords": [
+    "roaring",
+    "aws"
+  ],
+  "license": "Apache-2.0",
+  "author": "Salvatore Previti",
+  "homepage": "https://github.com/SalvatorePreviti/roaring-node-aws#readme",
+  "bugs": {
+    "url": "https://github.com/SalvatorePreviti/roaring-node-aws/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SalvatorePreviti/roaring-node-aws.git/docker-build"
+  },
   "main": "index.js",
   "types": "index.d.ts",
   "typings": "index.d.ts",
   "scripts": {
     "postinstall": "node ./unit-test.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SalvatorePreviti/roaring-node-aws.git/docker-build"
-  },
-  "keywords": [
-    "roaring",
-    "aws"
-  ],
-  "author": "Salvatore Previti",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/SalvatorePreviti/roaring-node-aws/issues"
-  },
-  "homepage": "https://github.com/SalvatorePreviti/roaring-node-aws#readme",
   "dependencies": {
-    "roaring": "^1.0.4",
-    "chai": "^4.2.0"
+    "chai": "^4.2.0",
+    "roaring": "^1.0.6"
   }
 }

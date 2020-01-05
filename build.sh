@@ -12,6 +12,7 @@ echo 'npm install OK.'
 mkdir -p lib/roaring-aws
 mkdir -p lib/roaring-aws/lib
 
+cp $PWD/docker-build/node_modules/roaring/package.json $PWD/lib/roaring-aws/package.json
 cp $PWD/docker-build/node_modules/roaring/*.js $PWD/lib/roaring-aws/
 cp $PWD/docker-build/node_modules/roaring/*.ts $PWD/lib/roaring-aws/
 cp $PWD/docker-build/node_modules/roaring/lib/*.js $PWD/lib/roaring-aws/lib/
